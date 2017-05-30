@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Sporter</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta charset="utf-8">
+		<style>
+			body {
+				margin: 0;
+				background: #f1f1f1;
+				font-family: sans-serif;
+			}
+			.typbtn {
+				width: 50%;
+				border: none;
+				background: #f1f1f1;
+				font-size: 17px;
+				border-bottom: solid;
+				border-bottom-color: #a1a1a1;
+				border-bottom-width: 7px;
+				outline: none;
+			}
+			#navtyp {
+				width: 100%;
+				position: fixed;
+				top: 0;
+				box-shadow: 0px 1px 5px #888888;
+			}
+			.dropbtn {
+				width: 70%;
+				font-size: 20px;
+				padding: 5px 0px 5px 0px;
+				border: none;
+				border-bottom: solid;
+				border-bottom-color: #ff9800;
+				border-bottom-width: 7px;
+				outline: none;
+			}
+			.cenpper {
+				text-align: center;
+			}
+			.submbtn {
+				font-size: 20px;
+				outline: none;
+				width: 80%;
+				border: none;
+				background: #03a9f4;
+				font-weight: bold;
+				color: #ffffff;
+				padding: 5px 0px 5px 0px;
+				border-radius: 6px;
+				box-shadow: 0px 2px 5px #888888;
+			}
+			.labspan {
+				width: 30%;
+				background: #ff9800;
+				border: none;
+				font-size: 20px;
+				padding: 5px 0px 5px 0px;
+				font-weight: bold;
+				color: #ffffff;
+				outline: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="navtyp"><button class="typbtn" style="background: #ffffff; border-bottom-color: #03a9f4; font-weight: bold;">運動</button><button class="typbtn">スポーツ</button></div>
+		<div id="exform">
+			<br><br><br>
+			<button class="labspan">体力</button><select id="catpow" class="dropbtn" onchange="desupd()">
+				<option value="alltp">すべて</option>
+				<option value="alltp">筋力</option>
+				<option value="alltp">柔軟性</option>
+				<option value="alltp">敏捷性</option>
+				<option value="alltp">持久力</option>
+				<option value="alltp">スピード</option>
+				<option value="alltp">瞬発力</option>
+			</select><br><br>
+			<span></span><br><br>
+			<button class="labspan">時間</button><select class="dropbtn" onchange="desupd()">
+				<option value="alltp">すべて</option>
+				<option value="alltp">筋力</option>
+				<option value="alltp">柔軟性</option>
+				<option value="alltp">敏捷性</option>
+				<option value="alltp">持久力</option>
+				<option value="alltp">スピード</option>
+				<option value="alltp">瞬発力</option>
+			</select><br><br>
+			<span class="desp"></span>
+			<br><br><br><br>
+			<div class="cenpper">
+				<button class="submbtn">検索</button>
+			</div>
+			<script>
+				function desupd() {
+					var powcat = document.getElementById("catpow").value;
+					alert(powcat);
+				}
+			</script>
+		</div>
+	</body>
+</html>
